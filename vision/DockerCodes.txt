@@ -1,0 +1,14 @@
+Oðuzhan@DESKTOP-ADDPMQB MINGW64 /c/Program Files/Docker Toolbox
+$ docker run -v $HOME/vision:/root/vision -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=10.180.0.34:0.0 -p 5000:5000 -p 8888:8888 -it spmallick/opencv-docker:opencv /bin/bash
+
+root@15652d2a2162:/# workon OpenCV-master-py3
+(OpenCV-master-py3) root@15652d2a2162:~# cd /root/demo/python/
+
+
+
+yüz tanýma demo : python detect_faces.py --image rooster.Jpg -p deploy.prototxt.txt  -m res10_300x300_ssd_iter_140000.caffemodel
+
+yüz tanýma demo2: python detect_faces.py --image iron_chic.jpg -p deploy.prototxt.txt  -m res10_300x300_ssd_iter_140000.caffemodel
+
+video yüz tanýma: python detect_faces_video.py -p deploy.prototxt.txt -m res10_300x300_ssd_iter_140000.caffemodel
+
